@@ -36,7 +36,6 @@ public:
         height = x;
     }
 
-public:
     double printVolume()
     {
         return length * width * height;
@@ -52,7 +51,7 @@ int main()
         cout << "\nMenu (Structure):\n";
         cout << "1. Initialize Date\n";
         cout << "2. Accept height, width, length from Console\n";
-        cout << "2. Accept side from Console\n";
+        cout << "3. Accept side from Console\n";
 
         cout << "Enter your choice: ";
         cin >> choice;
