@@ -70,8 +70,13 @@ int main()
 {
 
     int choice;
+    Time *arr[5];
 
-    Time arr[5];
+      for (int i = 0; i < 5; i++)
+    {
+        arr[i] = new Time();
+    }
+
 
     while (1)
     {
@@ -102,9 +107,9 @@ int main()
                 }
                 else
                 {
-                    arr[i].setHour(h);
-                    arr[i].setMinute(m);
-                    arr[i].setSecond(s);
+                    arr[i]->setHour(h);
+                    arr[i]->setMinute(m);
+                    arr[i]->setSecond(s);
                 }
             }
             break;
@@ -124,7 +129,7 @@ int main()
                 }
                 else
                 {
-                    arr[i].setHour(h);
+                    arr[i]->setHour(h);
                 }
             }
             break;
@@ -145,7 +150,7 @@ int main()
                 }
                 else
                 {
-                    arr[i].setMinute(m);
+                    arr[i]->setMinute(m);
                 }
             }
             break;
@@ -166,7 +171,7 @@ int main()
                 }
                 else
                 {
-                    arr[i].setSecond(s);
+                    arr[i]->setSecond(s);
                 }
             }
             break;
@@ -178,7 +183,7 @@ int main()
             for (int i = 0; i < 5; i++)
             {
                 cout << i << ") ";
-                arr[i].printTime();
+                arr[i]->printTime();
             }
 
             int i;
@@ -196,9 +201,9 @@ int main()
             }
             else
             {
-                arr[i].setHour(h);
-                arr[i].setMinute(m);
-                arr[i].setSecond(s);
+                arr[i]->setHour(h);
+                arr[i]->setMinute(m);
+                arr[i]->setSecond(s);
             }
 
             break;
@@ -209,7 +214,7 @@ int main()
             for (int i = 0; i < 5; i++)
             {
                 cout << i << ") ";
-                arr[i].printTime();
+                arr[i]->printTime();
             }
 
             break;
