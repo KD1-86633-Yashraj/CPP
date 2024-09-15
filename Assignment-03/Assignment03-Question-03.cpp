@@ -82,6 +82,7 @@ int main(){
     cout<<"Enter pincode"<<endl;
     cin>>building;
 
+
     ad2.acceptAddress(building,street,city,pin);
 
     //displaying Address using displayAddress() function
