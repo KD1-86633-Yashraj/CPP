@@ -18,7 +18,6 @@ class Student
     float totalMarks;
 
 public:
-    // setters
     Student(int roll) : rollNumber(roll)
     {
         name = "";
@@ -29,6 +28,9 @@ public:
         }
 
     }
+
+        // setters
+
     void accept()
     {
         cout << "Enter Name " << endl;
@@ -153,21 +155,20 @@ int main()
             int roll;
             cout<<"Enter roll number of student "<<endl;
             cin>>roll;
-            bool present=true;
+            bool present=false;
 
             for (int i = 0; i < 5; i++)
             {
                 if(arr[i]->search(arr[i],roll)){
                     cout<<"Student found at index "<<i<<endl;
-                    present=false;
+                    present=true;
                     break;
                 }
                 
             }
-            if(present==true){
+            if(present==false){
                 cout<<"Student not found"<<endl;
             }
-
             
             break;
         }

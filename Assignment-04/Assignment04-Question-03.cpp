@@ -100,8 +100,6 @@ system("CLS");
 
 while (1)
 {
-
-
         cout << "Enter your choice" << endl;
         cout << "1.Push" << endl;
         cout << "2.Pop" << endl;

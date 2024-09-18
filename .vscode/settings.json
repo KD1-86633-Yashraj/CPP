@@ -60,6 +60,8 @@
     "*.embeddedhtml": "html",
     "ostream": "cpp",
     "algorithm": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "ranges": "cpp",
+    "new": "cpp"
   }
 }
